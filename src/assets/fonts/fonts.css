@@ -1,13 +1,16 @@
 @font-face {
   font-family: 'Space Bold';
-  src: url('./SpaceGrotesk-Bold.ttf') format('truetype');
-  font-weight: 700;
   font-style: normal;
+  font-weight: 700;
+  src: url('./SpaceGrotesk-Bold.ttf') format('truetype');
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: 'Space Medium';
-  src: url('./SpaceGrotesk-Medium.ttf') format('truetype');
-  font-weight: 500;
   font-style: normal;
+  font-weight: 500;
+  src: url('./SpaceGrotesk-Medium.ttf') format('truetype');
+  font-display: swap;
 }
