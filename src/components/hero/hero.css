@@ -1,0 +1,121 @@
+.hero {
+  margin-bottom: 5rem;
+}
+
+.hero-img {
+  position: absolute;
+  top: -0.15rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.hero-txt {
+  max-width: 21.4375em;
+  margin: calc(100% - 1.5em) auto 0;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+  letter-spacing: -1.14px;
+  margin-bottom: 0.6em;
+}
+
+.hero-heading > br {
+  display: none;
+}
+
+.name-underline {
+  background-image: linear-gradient(to right, #4ee1a0 0%, #4ee1a0 100%);
+  background-position: 0 100%;
+  background-size: 100% 4px;
+  background-repeat: repeat-x;
+}
+
+.hero-discription {
+  font-family: "Space Medium";
+  line-height: 1.62;
+  color: var(--almost-white);
+  margin-bottom: 1.5em;
+}
+
+.contact-cta {
+  line-height: 1.62;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+  border-bottom: 2px solid var(--cyan);
+  padding-bottom: 0.625em;
+  -moz-transition: all 120ms ease-in-out;
+  -webkit-transition: all 120ms ease-in-out;
+  -o-transition: all 120ms ease-in-out;
+  transition: all 120ms ease-in-out;
+}
+
+.contact-cta:hover {
+  color: var(--cyan);
+}
+
+@media (min-width: 48em) {
+  .hero {
+    margin-bottom: 7em;
+  }
+  .hero-img {
+    right: 0;
+    top: 0;
+    left: initial;
+    transform: translate(0);
+  }
+
+  .hero-txt {
+    max-width: 27.8125em;
+    margin: 3em 0 0 calc((100% - 44.28em) / 2);
+    text-align: left;
+  }
+
+  .hero-heading {
+    font-size: 4.5rem;
+    letter-spacing: -2px;
+    margin-bottom: 0.83em;
+  }
+
+  .hero-heading > br {
+    display: block;
+  }
+
+  .hero-discription {
+    font-size: 1.25rem;
+    line-height: 1.56;
+    margin-bottom: 1.88em;
+  }
+}
+
+@media (min-width: 69.375em) {
+  .hero {
+    margin-bottom: 10em;
+  }
+  .hero-img {
+    top: -1%;
+    right: calc((100% - 1170px) / 2);
+  }
+
+  .hero-txt {
+    max-width: 44.125em;
+    margin: 4em 0 0 calc((100% - 69.375em) / 2);
+  }
+
+  .hero-heading {
+    font-size: 5.5rem;
+    letter-spacing: -2.5px;
+    margin-bottom: 0.5em;
+  }
+
+  .hero-heading > br {
+    display: none;
+  }
+
+  .hero-discription {
+    width: 29rem;
+    margin-bottom: 3.66em;
+  }
+}

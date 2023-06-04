@@ -1,0 +1,123 @@
+.form-container {
+  background-color: var(--grayish-black);
+  padding: 3.75em 0 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.125rem;
+  max-width: 21.4375em;
+  margin: 0 auto;
+}
+
+.form-txt {
+  text-align: center;
+}
+
+.form-txt__heading {
+  font-size: 2.5rem;
+  letter-spacing: -1.14px;
+  margin-bottom: 0.5em;
+}
+
+.form-txt__para {
+  font-family: "Space Medium";
+  line-height: 1.62;
+  color: var(--almost-white);
+}
+
+.form-box {
+  gap: 2rem;
+  width: 100%;
+  padding-bottom: 5.4375em;
+}
+
+.footer {
+  margin: 0;
+  border-top: 1px solid var(--white);
+}
+
+.input-field {
+  border: none;
+  padding: 0 0 17px 24px;
+  border-bottom: 2px solid var(--almost-white);
+  background-color: var(--grayish-black);
+  font-family: "Space Medium";
+}
+
+.input-field::placeholder {
+  text-transform: uppercase;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.input-msg {
+  height: 10em;
+  resize: none;
+  padding-right: 0.5em;
+}
+
+.input-msg::-webkit-scrollbar {
+  width: 5px;
+}
+
+.input-msg::-webkit-scrollbar-thumb {
+  background-color: var(--almost-white);
+  border-radius: 20rem;
+}
+
+.submit-btn {
+  border: none;
+  background-color: var(--grayish-black);
+  align-self: flex-end;
+  text-transform: uppercase;
+  line-height: 1.62;
+  padding-bottom: 0.625em;
+  letter-spacing: 2.28px;
+  border-bottom: 2px solid var(--cyan);
+  cursor: pointer;
+  -webkit-transition: all 120ms ease-in-out;
+  -moz-transition: all 120ms ease-in-out;
+  -o-transition: all 120ms ease-in-out;
+  transition: all 120ms ease-in-out;
+}
+
+.submit-btn:hover {
+  color: var(--cyan);
+}
+
+@media (min-width: 48em) {
+  .form {
+    max-width: 27.8125em;
+  }
+
+  .form-txt__heading {
+    font-size: 4.5rem;
+    letter-spacing: -2px;
+    margin-bottom: 0.277em;
+  }
+
+  .form-txt__para {
+    font-size: 1.125rem;
+    line-height: 1.56;
+  }
+}
+
+@media (min-width: 69.375em) {
+  .form {
+    flex-direction: row;
+    max-width: 69.375em;
+    align-items: flex-start;
+    gap: 13.75rem;
+  }
+
+  .form-txt {
+    text-align: left;
+  }
+}

@@ -1,0 +1,60 @@
+.navbar {
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.25em;
+  width: 100%;
+}
+
+.website-name {
+  font-family: "Space Bold";
+  font-size: 1.5rem;
+  line-height: 1.33;
+  letter-spacing: -0.33px;
+}
+
+.social-icons {
+  gap: 1.6rem;
+}
+
+.social-icons > a {
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
+.social-icons > a:hover {
+  color: var(--cyan);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 48em) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 44.28em;
+    margin: 1.8125em auto 2.5em;
+  }
+
+  .website-name {
+    font-size: 2rem;
+    line-height: inherit;
+    letter-spacing: -0.44px;
+  }
+
+  .social-icons {
+    gap: 2rem;
+  }
+
+  .social-icons > a {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 69.375em) {
+  .navbar {
+    max-width: 69.375em;
+    margin: 2.4375em auto 5.75em;
+  }
+}

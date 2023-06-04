@@ -1,0 +1,50 @@
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 2.5em 0;
+  border-style: solid;
+  border-color: var(--white);
+  border-width: 1px 0 1px;
+  margin-bottom: 5em;
+}
+.experience-heading {
+  font-size: 2rem;
+  line-height: 1.25;
+  letter-spacing: -1px;
+}
+
+.experience-para {
+  font-family: "Space Medium";
+  line-height: 1.62;
+  color: var(--almost-white);
+}
+
+@media (min-width: 48em) {
+  .experience-container {
+    text-align: left;
+    padding: 3.25em 0;
+    gap: 3.25rem;
+    margin-bottom: 6.25em;
+  }
+
+  .experience-heading {
+    font-size: 3rem;
+    line-height: 1.17;
+    letter-spacing: -1.5px;
+  }
+
+  .experience-para {
+    font-size: 1.125rem;
+    line-height: 1.56;
+  }
+}
+@media (min-width: 69.375em) {
+  .experience-container {
+    padding: 4em 0;
+    gap: 4rem;
+    margin-bottom: 8.75em;
+  }
+}
